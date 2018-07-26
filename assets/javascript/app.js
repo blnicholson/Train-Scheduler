@@ -59,11 +59,35 @@ database.ref().on("child_added", function(childSnapshot) {
     console.log(time);
     console.log(freq);
 
+    var trainFreq=freq;
+    var firstTrainTime=$("#firstTrain").val().trim();
+    var firstTrainTimeConverted = moment(firstTrainTime, "HH:mm").subtract(1, "years");
+    console.log(firstTrainTimeConverted);
+
+    //getting currentTime
+    var currentTime = moment();
+    console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+
+    var timesDifference = moment().diff(moment(firstTrainTimeConverted), "minutes");
+    console.log("DIFFERENCE IN TIME: " + timesDifference);
+
+    var timesModulus = timesDifference % trainFreq;
+    
+
+    var trainArrival = trainFreq - timesModulus;
+    console.log("MINUTES TILL TRAIN: " + trainArrival);
+
+    var nextArrival = moment().add(trainArrival, "minutes");
+    console.log("ARRIVAL TIME: " + moment(nextArrival).format("hh:mm"));
+
+    var convertedNextArrival = moment(nextArrival).format("hh:mm");
+
     var newItem=$("<tr>").append(
         $("<td>").text(name),
         $("<td>").text(dest),
-        $("<td>").text(time),
-        $("<td>").text(freq)
+        $("<td>").text(freq),
+        $("<td>").text(trainArrival),
+        $("<td>").text(convertedNextArrival)
     );
     $("#trains > tbody").append(newItem);
 
