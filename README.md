@@ -15,7 +15,7 @@ This app was created by using the following:
 * Firebase 
 * jQuery
 
-![Alt text](assets/images/)
+![Alt text](assets/images/train.png)
 
 
 
