@@ -67,7 +67,7 @@ database.ref().on("child_added", function(childSnapshot) {
 
     
     var trainFreq=frequency;
-    var firstTrainTime=$("#firstTrain").val().trim();
+    var firstTrainTime=time;
     var firstTrainTimeConverted = moment(firstTrainTime, "HH:mm").subtract(1, "years");
     console.log(firstTrainTimeConverted);
 
