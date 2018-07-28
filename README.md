@@ -15,6 +15,7 @@ This app was created by using the following:
 * Firebase 
 * jQuery
 
+![Alt text](assets/image/game.PNG)
 
 
 
