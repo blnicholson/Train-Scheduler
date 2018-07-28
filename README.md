@@ -16,4 +16,5 @@ This app was created by using the following:
 * jQuery
 
 
-![Alt text](assets/trainPNG)
+
+
