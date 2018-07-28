@@ -1,7 +1,28 @@
+body{
+    background-image:url("../images/background.jpg");
+    background-size:2000px 1700px;
+    font-family: 'Play', sans-serif;
+    color:white;
+}
+.jumbotron{
+    text-align:center;
+    color:white;
+    margin-bottom:35px;
+    background:transparent;
+    height:50px;
+    
+}
 .card{
     margin:15px;
+    background-color:gray;
 }
 
-h5{
-    background-color:orange;
+tr{
+    text-align:center;
+}
+td{
+    text-align:center;
+}
+h3{
+    text-align:center;
 }
