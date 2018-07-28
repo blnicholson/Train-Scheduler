@@ -17,5 +17,7 @@ This app was created by using the following:
 
 ![Alt text](assets/images/train.PNG)
 
+![Alt text](assets/images/train2.PNG)
+
 
 
